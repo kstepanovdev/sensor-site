@@ -46,6 +46,7 @@ body {
 }
 a {
   background: transparent;
+  font-weigh: bold;
 }
 a:focus {
   outline: thin dotted;
@@ -282,6 +283,7 @@ textarea {
 a {
   color: #428bca;
   text-decoration: none;
+  font-weight: bold;
 }
 a:hover,
 a:focus {
@@ -351,6 +353,7 @@ h6,
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
+
 }
 h1 small,
 h2 small,
