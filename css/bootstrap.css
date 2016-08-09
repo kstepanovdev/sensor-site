@@ -212,8 +212,6 @@ table {
   tr,
   img {
     page-break-inside: avoid;
-  }
-  img {
     max-width: 100% !important;
   }
   @page  {
@@ -298,6 +296,11 @@ a:focus {
 img {
   vertical-align: middle;
 }
+
+.table-responsive img {
+  max-width: 70%;
+}
+
 .img-responsive {
   display: block;
   max-width: 100%;
@@ -1369,6 +1372,7 @@ pre code {
 table {
   max-width: 100%;
   background-color: transparent;
+  overflow: scroll;
 }
 th {
   text-align: left;
@@ -5991,4 +5995,15 @@ td.visible-print {
   td.hidden-print {
     display: none !important;
   }
+}
+
+.small_and_float {
+  width: 50%;
+  float: left;
+  padding-right: 2em;
+}
+
+.danger {
+  color: rgb(151, 49, 49);
+  font-weight: bold;
 }

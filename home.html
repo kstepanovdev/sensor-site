@@ -43,7 +43,8 @@
         <ul class="main-nav">
           <li><a href="#product">Продукт</a></li>
           <li><a href="#description">Описание</a></li>
-          <li><a href="#specifications">Тех. характеристики</a></li> 
+          <li><a href="#specifications">Тех. характеристики</a></li>
+          <li><a href="#wiring_diagram">Схема подключения</a></li> 
           <li><a href="#client">Клиенты</a></li>
           <li><a href="#price">Цены</a></li>
           <li><a href="#contact">Контакты</a></li> 
@@ -68,41 +69,35 @@
     
   <div class="portfolioContainer wow fadeInUp delay-04s">
     <div class=" Portfolio-box usage">
-      <a href="#"><img src="img/in_the_car.jpg" alt=""></a>
+      <a href="img/in_the_car.jpg"><img src="img/in_the_car.jpg" alt=""></a>
       <p>Применение датчика в автомобиле</p>  
-    </div>
-
-      
-    <div class="Portfolio-box appearance">
-      <a href="#"><img src="img/connector.jpg" alt=""></a>
-      <p>Коннектор</p>  
-    </div>
+    </div>   
 
     <div class="Portfolio-box appearance">
-      <a href="#"><img src="img/body_with_display2.jpg" alt=""></a>
+      <a href="img/body_with_display2.jpg"><img src="img/body_with_display2.jpg" alt=""></a>
       <p>Корпус вместе с дисплеем</p>  
     </div>
 
     <div class="Portfolio-box appearance">
-      <a href="#"><img src="img/sensor2.jpg" alt=""></a>
+      <a href="img/sensor2.jpg"><img src="img/sensor2.jpg" alt=""></a>
       <p>Корпус датчика с резбой</p>  
     </div>
 
       
     <div class="Portfolio-box appearance">
-      <a href="#"><img src="img/sensor.jpg" alt=""></a>
+      <a href="img/sensor.jpg"><img src="img/sensor.jpg" alt=""></a>
       <p>Датчик</p>  
     </div>
 
       
     <div class="Portfolio-box appearance">
-      <a href="#"><img src="img/connector.jpg" alt=""></a>
+      <a href="img/connector.jpg"><img src="img/connector.jpg" alt=""></a>
       <p>Коннектор</p>  
     </div>
       
     
 <div class="Portfolio-box appearance">
-      <a href="#"><img src="img/size.jpg" alt=""></a>
+      <a href="img/size.jpg"><img src="img/size.jpg" alt=""></a>
       <p>Размер датчика</p>    
     </div>
     </div>
@@ -233,6 +228,22 @@
   </div>
 </section><!--main-section-end-->
 
+<section class="main-section"><!--main-section alabaster-start-->
+  <div class="container">
+    <h2 id='wiring_diagram'>Схема подключения</h2>
+    <h6>Easy peasy lemon squezy</h6>
+    <div class="small_and_float">
+      <a href="img/wiring_diagram.png"><img src="img/wiring_diagram.png" alt=""></a>
+    </div>
+    <div>
+      <p>
+        Питание датчика осуществляется от источника постоянного тока. Диапазон напряжения питания от <b>+9В</b> до <b>+24В</b>.Встроенный микропроцессор в корпусе цифрового дисплея стабилизирует и подает напряжение <b>+5В</b> на вход датчика, после чего сигнал датчика с информацией о значении давления в измеряемой точке системы ГБО, поступает снова в микропроцессор, который преобразовывает его и выдает цифровое значение давления в МРа на  дисплей <b>(1МПа = 10Ваr)</b>.
+        <span class="danger">Важно!</span> Цвета проводов могут отличаться! Необходимо соблюдать схаматичность подключения (при ориентации датчика и дисплея как на изображении).
+      </p>
+    </div>
+  </div>
+</section><!--main-section alabaster-end-->
+
 <section class="main-section client-part" id="client"><!--main-section client-part-start-->
   <div class="container">
     <b class="quote-right wow fadeInDown delay-03"><i class="fa-quote-right"></i></b>
@@ -281,7 +292,8 @@
         </div>
         <div class="contact-info-box phone clearfix">
           <h3><i class="fa-phone"></i><b>Телефон:</b></h3>
-          <span>+380-98-008-09-09</span>
+          <span>+38(098)008-09-09</span>
+          <span>+38(093)771-77-27</span>
         </div>
         <div class="contact-info-box email clearfix">
           <h3><i class="fa-pencil"></i>E-mail:</h3>
@@ -306,13 +318,14 @@
 
 <script type="text/javascript">
     $(document).ready(function(e) {
+        $('.main-nav li').on('click', function(){
+        $('.main-nav').slideUp("slow");
+        $('.main-nav').removeClass("active");
+    });
         $('#test').scrollToFixed();
         $('.res-nav_click').click(function(){
             $('.main-nav').slideToggle();
-            return false    
-            
         });
-        
     });
 </script>
 
