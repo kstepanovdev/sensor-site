@@ -1,1 +1,1 @@
-sensot-site.heroku.com
+sensor-site.heroku.com
