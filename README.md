@@ -1,1 +1,1 @@
-https://sensor-site.heroku.com
+http://sensor-site.heroku.com
